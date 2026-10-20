@@ -1,0 +1,7 @@
+{
+  "electron_count": 10,
+  "object_id": "WORLD_WATER_DERIVED_REQUEST",
+  "path": "/app/examples/ase_pyscf_h2o.json",
+  "scope": "bounded mean-field BO quantum single point",
+  "sha256": "2020e0bc1a473f9a2fe1ad51b1f5e18ba14d2e080e660dd452d84ef845ca96a2"
+}

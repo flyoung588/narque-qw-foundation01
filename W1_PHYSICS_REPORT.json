@@ -1,0 +1,573 @@
+{
+  "status": "W1_BOUNDED_QUANTUM_CONSTRUCTION_PROVEN",
+  "claim_ceiling": "bounded nonperiodic <=8 atoms <=30 electrons fixed-nuclei finite-basis mean-field construction and energy/analytic-force interface, not physical precision certification",
+  "objects": [
+    {
+      "name": "ase_pyscf_hehp",
+      "spec": {
+        "epistemic_mode": "GROUNDED",
+        "experiment": {
+          "action": "single_point",
+          "description": "HeH+ molecular single point: illustrative, not an accuracy certification"
+        },
+        "matter": {
+          "atoms": [
+            {
+              "element": "He",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "element": "H",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.77
+              ]
+            }
+          ],
+          "charge": 1,
+          "periodic": false,
+          "source": "NARQUE unhardcoded atomic coordinates from request",
+          "spin_2S": 0,
+          "type": "molecule"
+        },
+        "object_id": "WORLD_HEHPLUS_DERIVED_REQUEST",
+        "physics": {
+          "basis": "cc-pvdz",
+          "engine": "ase-pyscf",
+          "method": "RHF",
+          "observables": [
+            "energy",
+            "forces"
+          ]
+        },
+        "version": "QW-WORLDSPEC-0.1"
+      },
+      "energy_Eh": -2.9235606513347485,
+      "energy_definition": "BO total electronic-structure energy including nuclear repulsion; not electronic-only expectation",
+      "gradient_Eh_per_bohr": [
+        [
+          -1.6909465630435407e-18,
+          -2.1908758326669174e-19,
+          0.008934675483180943
+        ],
+        [
+          1.6909465630435376e-18,
+          2.190875832666923e-19,
+          -0.008934675483180055
+        ]
+      ],
+      "gradient_provenance": "derived exactly by negating saved forces; frozen code computes analytic nuc_grad_method then forces=-gradient",
+      "forces_Eh_per_bohr": [
+        [
+          1.6909465630435407e-18,
+          2.1908758326669174e-19,
+          -0.008934675483180943
+        ],
+        [
+          -1.6909465630435376e-18,
+          -2.190875832666923e-19,
+          0.008934675483180055
+        ]
+      ],
+      "SCF_converged": true,
+      "method": "RHF",
+      "basis": "cc-pvdz",
+      "electrons": 2,
+      "spin_2S": 0,
+      "ASE_used": true,
+      "ASE_energy_eV": -79.55413809704208,
+      "ASE_forces_eV_per_angstrom": [
+        [
+          8.69519682636863e-17,
+          1.1265936489964989e-17,
+          -0.45943948557520503
+        ],
+        [
+          -8.695196826368613e-17,
+          -1.1265936489965018e-17,
+          0.45943948557515935
+        ]
+      ],
+      "force_unit_conversion_error": 0.0,
+      "total_force_residual_Eh_per_bohr": [
+        3.0814879110195774e-33,
+        -5.7777898331617076e-34,
+        -8.881784197001252e-16
+      ]
+    },
+    {
+      "name": "ase_pyscf_h2o",
+      "spec": {
+        "epistemic_mode": "GROUNDED",
+        "experiment": {
+          "action": "single_point",
+          "description": "Water electronic single point; no material stability inference"
+        },
+        "matter": {
+          "atoms": [
+            {
+              "element": "O",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "element": "H",
+              "xyz_angstrom": [
+                0.0,
+                0.757,
+                0.586
+              ]
+            },
+            {
+              "element": "H",
+              "xyz_angstrom": [
+                0.0,
+                -0.757,
+                0.586
+              ]
+            }
+          ],
+          "charge": 0,
+          "periodic": false,
+          "source": "NARQUE runtime-supplied unhardcoded three-atom coordinate spec",
+          "spin_2S": 0,
+          "type": "molecule"
+        },
+        "object_id": "WORLD_WATER_DERIVED_REQUEST",
+        "physics": {
+          "basis": "cc-pvdz",
+          "engine": "ase-pyscf",
+          "method": "RHF",
+          "observables": [
+            "energy",
+            "forces"
+          ]
+        },
+        "version": "QW-WORLDSPEC-0.1"
+      },
+      "energy_Eh": -76.02679364497625,
+      "energy_definition": "BO total electronic-structure energy including nuclear repulsion; not electronic-only expectation",
+      "gradient_Eh_per_bohr": [
+        [
+          -2.9714093210771713e-16,
+          -1.2467224702274702e-15,
+          -0.014317278442088188
+        ],
+        [
+          3.050984430636901e-16,
+          0.010082196023782686,
+          0.007158639221043428
+        ],
+        [
+          -7.957510955976443e-18,
+          -0.010082196023782686,
+          0.007158639221045648
+        ]
+      ],
+      "gradient_provenance": "derived exactly by negating saved forces; frozen code computes analytic nuc_grad_method then forces=-gradient",
+      "forces_Eh_per_bohr": [
+        [
+          2.9714093210771713e-16,
+          1.2467224702274702e-15,
+          0.014317278442088188
+        ],
+        [
+          -3.050984430636901e-16,
+          -0.010082196023782686,
+          -0.007158639221043428
+        ],
+        [
+          7.957510955976443e-18,
+          0.010082196023782686,
+          -0.007158639221045648
+        ]
+      ],
+      "SCF_converged": true,
+      "method": "RHF",
+      "basis": "cc-pvdz",
+      "electrons": 10,
+      "spin_2S": 0,
+      "ASE_used": true,
+      "ASE_energy_eV": -2068.7944469174745,
+      "ASE_forces_eV_per_angstrom": [
+        [
+          1.52796010608214e-14,
+          6.410904698828866e-14,
+          0.7362240581264048
+        ],
+        [
+          -1.5688792726143043e-14,
+          -0.5184473642444978,
+          -0.36811202906316814
+        ],
+        [
+          4.091916653218232e-16,
+          0.5184473642444978,
+          -0.36811202906328233
+        ]
+      ],
+      "force_unit_conversion_error": 0.0,
+      "total_force_residual_Eh_per_bohr": [
+        3.50057026691824e-30,
+        1.2472661792273243e-15,
+        -8.881784197001252e-16
+      ]
+    },
+    {
+      "name": "pyscf_atomic_h",
+      "spec": {
+        "epistemic_mode": "GROUNDED",
+        "experiment": {
+          "action": "single_point",
+          "description": "One-electron finite Gaussian basis vs analytic -0.5Eh; not a molecular cross-solver proof"
+        },
+        "matter": {
+          "atoms": [
+            {
+              "element": "H",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ],
+          "charge": 0,
+          "periodic": false,
+          "source": "Hydrogen atom independent analytic E0=-0.5 Eh in infinite basis, one-electron Coulomb limit",
+          "spin_2S": 1,
+          "type": "molecule"
+        },
+        "object_id": "WORLD_H_EXACT_LIMIT_BENCHMARK",
+        "physics": {
+          "basis": "cc-pvdz",
+          "engine": "pyscf",
+          "method": "UHF",
+          "observables": [
+            "energy",
+            "forces"
+          ]
+        },
+        "version": "QW-WORLDSPEC-0.1"
+      },
+      "energy_Eh": -0.49927840341958307,
+      "energy_definition": "BO total electronic-structure energy including nuclear repulsion; not electronic-only expectation",
+      "gradient_Eh_per_bohr": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "gradient_provenance": "derived exactly by negating saved forces; frozen code computes analytic nuc_grad_method then forces=-gradient",
+      "forces_Eh_per_bohr": [
+        [
+          -0.0,
+          -0.0,
+          -0.0
+        ]
+      ],
+      "SCF_converged": true,
+      "method": "UHF",
+      "basis": "cc-pvdz",
+      "electrons": 1,
+      "spin_2S": 1,
+      "ASE_used": false,
+      "ASE_energy_eV": null,
+      "ASE_forces_eV_per_angstrom": null,
+      "force_unit_conversion_error": 0.0,
+      "total_force_residual_Eh_per_bohr": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "third_worldspec_LiH",
+      "spec": {
+        "epistemic_mode": "GROUNDED",
+        "experiment": {
+          "action": "single_point",
+          "description": "LiH gas-phase finite-basis RHF single point; not bulk LiH or hydrogen storage capability"
+        },
+        "matter": {
+          "atoms": [
+            {
+              "element": "Li",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "element": "H",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                1.595
+              ]
+            }
+          ],
+          "charge": 0,
+          "periodic": false,
+          "source": "Independent runtime-generated third molecule specification for a bounded open-construction proof; not pre-existing Foundation-01 examples",
+          "spin_2S": 0,
+          "type": "molecule"
+        },
+        "object_id": "QW_DYNAMIC_LiH_GEOMETRY_V011",
+        "physics": {
+          "basis": "cc-pvdz",
+          "engine": "ase-pyscf",
+          "method": "RHF",
+          "observables": [
+            "energy",
+            "forces"
+          ]
+        },
+        "version": "QW-WORLDSPEC-0.1"
+      },
+      "energy_Eh": -7.9836158670095765,
+      "energy_definition": "BO total electronic-structure energy including nuclear repulsion; not electronic-only expectation",
+      "gradient_Eh_per_bohr": [
+        [
+          1.3478885809203292e-17,
+          6.614910952149575e-18,
+          0.0031271064730851172
+        ],
+        [
+          -1.3478885809203261e-17,
+          -6.614910952149555e-18,
+          -0.0031271064730853393
+        ]
+      ],
+      "gradient_provenance": "derived exactly by negating saved forces; frozen code computes analytic nuc_grad_method then forces=-gradient",
+      "forces_Eh_per_bohr": [
+        [
+          -1.3478885809203292e-17,
+          -6.614910952149575e-18,
+          -0.0031271064730851172
+        ],
+        [
+          1.3478885809203261e-17,
+          6.614910952149555e-18,
+          0.0031271064730853393
+        ]
+      ],
+      "SCF_converged": true,
+      "method": "RHF",
+      "basis": "cc-pvdz",
+      "electrons": 4,
+      "spin_2S": 0,
+      "ASE_used": true,
+      "ASE_energy_eV": -217.24525499679595,
+      "ASE_forces_eV_per_angstrom": [
+        [
+          -6.931121755865432e-16,
+          -3.401523973313226e-16,
+          -0.16080228006463837
+        ],
+        [
+          6.931121755865416e-16,
+          3.401523973313215e-16,
+          0.16080228006464978
+        ]
+      ],
+      "force_unit_conversion_error": 0.0,
+      "total_force_residual_Eh_per_bohr": [
+        -3.0814879110195774e-32,
+        -2.0029671421627253e-32,
+        2.220446049250313e-16
+      ]
+    },
+    {
+      "name": "hehp_branch",
+      "spec": {
+        "epistemic_mode": "GROUNDED",
+        "experiment": {
+          "action": "single_point",
+          "description": "HeH+ molecular single point: illustrative, not an accuracy certification"
+        },
+        "matter": {
+          "atoms": [
+            {
+              "element": "He",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            },
+            {
+              "element": "H",
+              "xyz_angstrom": [
+                0.0,
+                0.0,
+                0.772
+              ]
+            }
+          ],
+          "charge": 1,
+          "periodic": false,
+          "source": "NARQUE unhardcoded atomic coordinates from request",
+          "spin_2S": 0,
+          "type": "molecule"
+        },
+        "object_id": "WORLD_HEHPLUS_BRANCH",
+        "physics": {
+          "basis": "cc-pvdz",
+          "engine": "ase-pyscf",
+          "method": "RHF",
+          "observables": [
+            "energy",
+            "forces"
+          ]
+        },
+        "version": "QW-WORLDSPEC-0.1"
+      },
+      "energy_Eh": -2.92359184765178,
+      "energy_definition": "BO total electronic-structure energy including nuclear repulsion; not electronic-only expectation",
+      "gradient_Eh_per_bohr": [
+        [
+          1.92420482969395e-18,
+          6.068669765172596e-19,
+          0.007577486120511567
+        ],
+        [
+          -1.924204829693827e-18,
+          -6.06866976517181e-19,
+          -0.007577486120511123
+        ]
+      ],
+      "gradient_provenance": "derived exactly by negating saved forces; frozen code computes analytic nuc_grad_method then forces=-gradient",
+      "forces_Eh_per_bohr": [
+        [
+          -1.92420482969395e-18,
+          -6.068669765172596e-19,
+          -0.007577486120511567
+        ],
+        [
+          1.924204829693827e-18,
+          6.06866976517181e-19,
+          0.007577486120511123
+        ]
+      ],
+      "SCF_converged": true,
+      "method": "RHF",
+      "basis": "cc-pvdz",
+      "electrons": 2,
+      "spin_2S": 0,
+      "ASE_used": true,
+      "ASE_energy_eV": -79.55498699207429,
+      "ASE_forces_eV_per_angstrom": [
+        [
+          -9.894659059079446e-17,
+          -3.12063546156244e-17,
+          -0.3896500025898687
+        ],
+        [
+          9.894659059078812e-17,
+          3.120635461562036e-17,
+          0.3896500025898459
+        ]
+      ],
+      "force_unit_conversion_error": 0.0,
+      "total_force_residual_Eh_per_bohr": [
+        -1.232595164407831e-31,
+        -7.857794173099922e-32,
+        -4.440892098500626e-16
+      ]
+    }
+  ],
+  "HeHplus_geometry_change": {
+    "energy_difference": -3.1196317031412235e-05,
+    "physical_precision_qualified": false,
+    "reason": "SAME_COMPOSITION_AND_PHYSICAL_METHOD",
+    "scope": "same-model geometry perturbation, NOT a reaction barrier, discovery, or independently certified energy",
+    "status": "MODEL_INTERNAL_DIFFERENCE",
+    "unit": "Eh"
+  },
+  "force_FD": {
+    "absolute_error_eV_per_angstrom": 5.0689158741512585e-05,
+    "analytic_gradient_from_PySCF_eV_per_angstrom": 0.45943948557515935,
+    "finite_difference_eV_per_angstrom": 0.45949017473390086,
+    "source": "same PySCF electronic integral engine; numerical gradient consistency, not independent physical validation",
+    "step_angstrom": 0.001
+  },
+  "H_error_Eh": 0.0007215965804169278,
+  "dynamic_LiH_generic_path": "WorldSpec->validate->run_world->ASE calculator->generic PySCF RHF, no molecule-specific code",
+  "eight_acceptance_conditions": {
+    "ASE_atoms": true,
+    "actual_PySCF": true,
+    "energy_and_forces": true,
+    "HeHplus_geometry_resolved": true,
+    "force_FD_within_original_threshold": true,
+    "LiH_generic_WorldSpec": true,
+    "model_basis_SCF_error_evidence": true,
+    "unified_interface_observations": true
+  },
+  "admission": {
+    "cgroup": {
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "cpu.max": "100000 100000",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "memory.peak": "12099584",
+      "cpu.stat": "usage_usec 223987\nuser_usec 196236\nsystem_usec 27750\nnice_usec 0\ncore_sched.force_idle_usec 0\nnr_periods 2\nnr_throttled 0\nthrottled_usec 0\nnr_bursts 0\nburst_usec 0"
+    },
+    "network_interfaces": [
+      "lo"
+    ],
+    "affinity": [
+      0
+    ],
+    "python": "3.12.15",
+    "run_id": null,
+    "source_sha": "d45bdae0479ed8e033fb852f5a6f04b3af07be3b"
+  },
+  "versions": {
+    "python": "3.12.15",
+    "ase": "3.29.0",
+    "pyscf": "2.8.0",
+    "numpy": "2.2.6",
+    "scipy": "1.15.3",
+    "jsonschema": "4.25.1"
+  },
+  "resources": {
+    "rusage_ru_maxrss_KiB": 136832,
+    "rusage_system_seconds": 0.14889,
+    "rusage_user_seconds": 1.135166,
+    "wall_seconds": 0.8155036490000072
+  },
+  "limits": [
+    "Finite-basis RHF/UHF only, no independent engine or correlated many-electron accuracy certification.",
+    "H cc-pVDZ error relative -0.5 Eh is finite basis; UHF one-electron has no missing electron correlation.",
+    "Only one FD step 0.001 Angstrom and one component checked, not full Hessian/gradient convergence. FD +/- complete observations were not individually persisted by frozen program.",
+    "Direct H PySCF input deliberately did not use ASE; three molecular inputs and HeH+ branch did.",
+    "Original local test collection failed; original cloud workflow has no unit-test step and RDKit is not installed. No claim of 16/16 current cloud test PASS.",
+    "Original wrapper records cgroup peak/events at admission only, not end-of-run peak. RESOURCES contains science process maxrss, not full process-tree peak. Hard cgroup memory limit remains enforced.",
+    "Rusage CPU includes earlier imports whereas wall_seconds starts inside main; these scopes differ.",
+    "Raw observation publication_status field remains its frozen local label; subsequent public Git commit is separately recorded, original evidence unchanged.",
+    "SCF convergence flag and threshold recorded; detailed iterations/transcript not saved (verbose=0).",
+    "Science container hard limits differ from unconstrained standard-runner build/preparation; total Job bounded by15min.",
+    "No arbitrary cross-composition absolute-energy comparisons or M1 energy conclusions."
+  ],
+  "W2": "NOT_TESTED",
+  "W3": "NOT_TESTED",
+  "original_discovery": "NOT_TESTED",
+  "historical_Core01_03": "UNCHANGED",
+  "run_url": "https://github.com/flyoung588/narque-qw-foundation01/actions/runs/39515923569",
+  "source_commit": "d45bdae0479ed8e033fb852f5a6f04b3af07be3b",
+  "automatic_reruns": 0,
+  "purchases": 0,
+  "failure_files": [],
+  "BChat_scientific_review": "PENDING"
+}

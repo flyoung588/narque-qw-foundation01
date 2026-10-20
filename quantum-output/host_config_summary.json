@@ -1,0 +1,8 @@
+{
+  "mem": 1073741824,
+  "memswap": 1073741824,
+  "network": "none",
+  "nanocpus": 1000000000,
+  "uid": "1001:1001",
+  "image": "sha256:5a5b645128e999848e5d7fba08bf3f63423c09cd09b44fe4b4519093221cd139"
+}

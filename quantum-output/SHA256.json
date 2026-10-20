@@ -1,0 +1,19 @@
+{
+  "FINAL_RECEIPT.json": "bf5dc7a81e62a08a9e94ae2dd51a581e677170f8a4352dddcc8cfe1a0535ffa5",
+  "RESOURCES.json": "487b2425a445ecee4cf7e9b728dbfaed2d669ff1e5e7f13ce8267fe678faa62c",
+  "admission.json": "b316b1bef12425fd2df25a9ad99460badc19418b59839f8238f322ab265a61ce",
+  "ase_pyscf_h2o.input_receipt.json": "f64e95d67d5964e4b5b6aa2b74feb8660b66fcac08cc6bbc0ee7f5cd1a1b2340",
+  "ase_pyscf_h2o.observation.json": "5ee485089b4b8b9cc07d5f5f9530ac3bfbfd95d1cac2896cfb26f13cd6cb81ea",
+  "ase_pyscf_hehp.input_receipt.json": "09efc2298f5a10e47199f7b0fd04eb6d730f7f0d4d547bd6abbc777ba63f707b",
+  "ase_pyscf_hehp.observation.json": "d13a69302badd9125798b5f078de9c9050dac3010402fb65f8fa5768a5ea6e20",
+  "hehp_branch.observation.json": "b79690a4250236a05dd8e539b460e7382d36717e625f6fac24bedcd7428c8075",
+  "hehp_force_fd.json": "ce751513bbd98ac25b11849805211bf1466ab9b895e5cfc0d861759adca99d73",
+  "hehp_geometry_compare.json": "e1b239bf752408c514d782863eecd2751009a0ca5dbd1b7096ee8a71bc889b21",
+  "host_config_summary.json": "c2afc18331f54c94b0ff2791507348517a550e4b63c0af3b7e07f125b48ece77",
+  "installed_versions.json": "9ef4e6cb869fb8b75ee0f434d03651920e9e37282da596738c2e9171b7957f43",
+  "pyscf_atomic_h.input_receipt.json": "91ae257820e9130f471c865012a3d2be4b9da39fff331ba5648cee91d6546999",
+  "pyscf_atomic_h.observation.json": "e008c84f47f2b4dce26063dc8cab9f1ffeb723f5b053ea16b36550ed111d114f",
+  "third_input_sha256.json": "acbc344cfd97420e10800104610a0372ff958c35f34c56571736238f3adfe142",
+  "third_worldspec_LiH.input_receipt.json": "ba5ba1f0af2e296c4785a66ae376f555cfd2b1ab00f6356073feb739e593a113",
+  "third_worldspec_LiH.observation.json": "93cefb4ba30ff5c9e3d287e6d340384ede6d7938b838d59ad9e12609fd2cc71f"
+}

@@ -1,0 +1,14 @@
+{
+  "spec_sha256": "0c675d22e11042646805ff4fbcc7666f06015800748ba84d61798a6aba0f8d6d",
+  "meta": {
+    "electron_count": 4,
+    "spin_2S": 0,
+    "atomic_numbers": [
+      3,
+      1
+    ],
+    "model_scope": "molecular only; nonperiodic; finite element and size domain; not arbitrary matter"
+  },
+  "object_id": "QW_DYNAMIC_LiH_GEOMETRY_V011",
+  "source": "prewritten before any live quantum request"
+}

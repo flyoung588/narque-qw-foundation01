@@ -1,0 +1,7 @@
+{
+  "absolute_error_eV_per_angstrom": 5.0689158741512585e-05,
+  "analytic_gradient_from_PySCF_eV_per_angstrom": 0.45943948557515935,
+  "finite_difference_eV_per_angstrom": 0.45949017473390086,
+  "source": "same PySCF electronic integral engine; numerical gradient consistency, not independent physical validation",
+  "step_angstrom": 0.001
+}

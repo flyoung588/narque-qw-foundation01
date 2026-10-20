@@ -1,0 +1,7 @@
+{
+  "electron_count": 1,
+  "object_id": "WORLD_H_EXACT_LIMIT_BENCHMARK",
+  "path": "/app/examples/pyscf_atomic_h.json",
+  "scope": "bounded mean-field BO quantum single point",
+  "sha256": "159688303b1d5c497d1a52e0a6b0f08c2a064c1dd9a616322b13fa946727663b"
+}

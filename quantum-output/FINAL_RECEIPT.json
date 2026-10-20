@@ -1,0 +1,39 @@
+{
+  "H_analytic_minus_half_error_Eh": 0.0007215965804169278,
+  "HeHplus_force_fd_error_eV_per_angstrom": 5.0689158741512585e-05,
+  "W2_independent_engine": "NOT_TESTED",
+  "W3_autonomous_feedback": "NOT_TESTED",
+  "actually_executed_inputs": [
+    "ase_pyscf_hehp",
+    "ase_pyscf_h2o",
+    "pyscf_atomic_h",
+    "third_worldspec_LiH"
+  ],
+  "new_physical_discovery": "NOT_TESTED",
+  "one_dynamic_runtime_spec_input": true,
+  "quantum_electronic_energy_observations": {
+    "ase_pyscf_h2o": {
+      "basis": "cc-pvdz",
+      "energy_Eh": -76.02679364497625,
+      "method": "RHF"
+    },
+    "ase_pyscf_hehp": {
+      "basis": "cc-pvdz",
+      "energy_Eh": -2.9235606513347485,
+      "method": "RHF"
+    },
+    "pyscf_atomic_h": {
+      "basis": "cc-pvdz",
+      "energy_Eh": -0.49927840341958307,
+      "method": "UHF"
+    },
+    "third_worldspec_LiH": {
+      "basis": "cc-pvdz",
+      "energy_Eh": -7.9836158670095765,
+      "method": "RHF"
+    }
+  },
+  "scope": "nonperiodic fixed-nuclei finite-basis mean-field energy/gradient only",
+  "status": "W1_BOUNDED_QUANTUM_CONSTRUCTION_PROVEN",
+  "third_input": "third_worldspec_LiH.json"
+}

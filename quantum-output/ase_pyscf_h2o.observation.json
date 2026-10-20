@@ -1,0 +1,149 @@
+{
+  "matter_check": {
+    "atomic_numbers": [
+      8,
+      1,
+      1
+    ],
+    "electron_count": 10,
+    "model_scope": "molecular only; nonperiodic; finite element and size domain; not arbitrary matter",
+    "spin_2S": 0
+  },
+  "model_precision_qualified": false,
+  "observation": {
+    "SCF_convergence_threshold_Eh": 1e-10,
+    "SCF_max_iterations": 80,
+    "ase_atoms_used": true,
+    "ase_calculator_eV": -2068.7944469174745,
+    "ase_forces_eV_per_angstrom": [
+      [
+        1.52796010608214e-14,
+        6.410904698828866e-14,
+        0.7362240581264048
+      ],
+      [
+        -1.5688792726143043e-14,
+        -0.5184473642444978,
+        -0.36811202906316814
+      ],
+      [
+        4.091916653218232e-16,
+        0.5184473642444978,
+        -0.36811202906328233
+      ]
+    ],
+    "basis": "cc-pvdz",
+    "comparison_scope": "same composition/charge/spin/method/basis and geometry branch only",
+    "converged": true,
+    "electronic_structure_solved": true,
+    "electrons": 10,
+    "energy": -76.02679364497625,
+    "energy_eV": -2068.7944469174745,
+    "energy_unit": "Eh",
+    "engine": "PySCF",
+    "engine_version": "2.8.0",
+    "forces_Eh_per_bohr": [
+      [
+        2.9714093210771713e-16,
+        1.2467224702274702e-15,
+        0.014317278442088188
+      ],
+      [
+        -3.050984430636901e-16,
+        -0.010082196023782686,
+        -0.007158639221043428
+      ],
+      [
+        7.957510955976443e-18,
+        0.010082196023782686,
+        -0.007158639221045648
+      ]
+    ],
+    "forces_eV_per_angstrom": [
+      [
+        1.52796010608214e-14,
+        6.410904698828866e-14,
+        0.7362240581264048
+      ],
+      [
+        -1.5688792726143043e-14,
+        -0.5184473642444978,
+        -0.36811202906316814
+      ],
+      [
+        4.091916653218232e-16,
+        0.5184473642444978,
+        -0.36811202906328233
+      ]
+    ],
+    "method": "RHF",
+    "nuclear_repulsion_Eh": 9.193913160623385,
+    "orbital_basis_size": 24,
+    "physics_limit": "nonrelativistic fixed-nuclei Born-Oppenheimer; no nuclear dynamics, no correlated many-electron accuracy claim",
+    "solver_equation": "single-determinant mean-field electronic Hamiltonian; approximate finite-basis solution",
+    "spin_2S": 0
+  },
+  "publication_status": "LOCAL_ONLY_NOT_PUBLICLY_SUBMITTED",
+  "record_kind": "QW_FOUNDATION01_OBSERVATION",
+  "scientific_novelty": "NOT_TESTED",
+  "spec": {
+    "epistemic_mode": "GROUNDED",
+    "experiment": {
+      "action": "single_point",
+      "description": "Water electronic single point; no material stability inference"
+    },
+    "matter": {
+      "atoms": [
+        {
+          "element": "O",
+          "xyz_angstrom": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "xyz_angstrom": [
+            0.0,
+            0.757,
+            0.586
+          ]
+        },
+        {
+          "element": "H",
+          "xyz_angstrom": [
+            0.0,
+            -0.757,
+            0.586
+          ]
+        }
+      ],
+      "charge": 0,
+      "periodic": false,
+      "source": "NARQUE runtime-supplied unhardcoded three-atom coordinate spec",
+      "spin_2S": 0,
+      "type": "molecule"
+    },
+    "object_id": "WORLD_WATER_DERIVED_REQUEST",
+    "physics": {
+      "basis": "cc-pvdz",
+      "engine": "ase-pyscf",
+      "method": "RHF",
+      "observables": [
+        "energy",
+        "forces"
+      ]
+    },
+    "version": "QW-WORLDSPEC-0.1"
+  },
+  "status": "CALCULATED",
+  "truth_dimensions": {
+    "external_reality_engineering": "NOT_TESTED",
+    "model_physics": "MEAN_FIELD_FINITE_BASIS",
+    "numerical": "NOT_INDEPENDENTLY_CERTIFIED",
+    "scientific_novelty": "NOT_TESTED"
+  },
+  "world_schema_sha256": "3e6c4696a5cb2530a7a32208950176480e97d6557162e5e34c761d111b33fb70",
+  "world_spec_sha256": "a51629d3756d39efcdc1c680494fee18ce136bae7a1e5a4151420c550c268add"
+}

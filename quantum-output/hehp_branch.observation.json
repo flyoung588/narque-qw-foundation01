@@ -1,0 +1,125 @@
+{
+  "matter_check": {
+    "atomic_numbers": [
+      2,
+      1
+    ],
+    "electron_count": 2,
+    "model_scope": "molecular only; nonperiodic; finite element and size domain; not arbitrary matter",
+    "spin_2S": 0
+  },
+  "model_precision_qualified": false,
+  "observation": {
+    "SCF_convergence_threshold_Eh": 1e-10,
+    "SCF_max_iterations": 80,
+    "ase_atoms_used": true,
+    "ase_calculator_eV": -79.55498699207429,
+    "ase_forces_eV_per_angstrom": [
+      [
+        -9.894659059079446e-17,
+        -3.12063546156244e-17,
+        -0.3896500025898687
+      ],
+      [
+        9.894659059078812e-17,
+        3.120635461562036e-17,
+        0.3896500025898459
+      ]
+    ],
+    "basis": "cc-pvdz",
+    "comparison_scope": "same composition/charge/spin/method/basis and geometry branch only",
+    "converged": true,
+    "electronic_structure_solved": true,
+    "electrons": 2,
+    "energy": -2.92359184765178,
+    "energy_eV": -79.55498699207429,
+    "energy_unit": "Eh",
+    "engine": "PySCF",
+    "engine_version": "2.8.0",
+    "forces_Eh_per_bohr": [
+      [
+        -1.92420482969395e-18,
+        -6.068669765172596e-19,
+        -0.007577486120511567
+      ],
+      [
+        1.924204829693827e-18,
+        6.06866976517181e-19,
+        0.007577486120511123
+      ]
+    ],
+    "forces_eV_per_angstrom": [
+      [
+        -9.894659059079446e-17,
+        -3.12063546156244e-17,
+        -0.3896500025898687
+      ],
+      [
+        9.894659059078812e-17,
+        3.120635461562036e-17,
+        0.3896500025898459
+      ]
+    ],
+    "method": "RHF",
+    "nuclear_repulsion_Eh": 1.3709254168911917,
+    "orbital_basis_size": 10,
+    "physics_limit": "nonrelativistic fixed-nuclei Born-Oppenheimer; no nuclear dynamics, no correlated many-electron accuracy claim",
+    "solver_equation": "single-determinant mean-field electronic Hamiltonian; approximate finite-basis solution",
+    "spin_2S": 0
+  },
+  "publication_status": "LOCAL_ONLY_NOT_PUBLICLY_SUBMITTED",
+  "record_kind": "QW_FOUNDATION01_OBSERVATION",
+  "scientific_novelty": "NOT_TESTED",
+  "spec": {
+    "epistemic_mode": "GROUNDED",
+    "experiment": {
+      "action": "single_point",
+      "description": "HeH+ molecular single point: illustrative, not an accuracy certification"
+    },
+    "matter": {
+      "atoms": [
+        {
+          "element": "He",
+          "xyz_angstrom": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "element": "H",
+          "xyz_angstrom": [
+            0.0,
+            0.0,
+            0.772
+          ]
+        }
+      ],
+      "charge": 1,
+      "periodic": false,
+      "source": "NARQUE unhardcoded atomic coordinates from request",
+      "spin_2S": 0,
+      "type": "molecule"
+    },
+    "object_id": "WORLD_HEHPLUS_BRANCH",
+    "physics": {
+      "basis": "cc-pvdz",
+      "engine": "ase-pyscf",
+      "method": "RHF",
+      "observables": [
+        "energy",
+        "forces"
+      ]
+    },
+    "version": "QW-WORLDSPEC-0.1"
+  },
+  "status": "CALCULATED",
+  "truth_dimensions": {
+    "external_reality_engineering": "NOT_TESTED",
+    "model_physics": "MEAN_FIELD_FINITE_BASIS",
+    "numerical": "NOT_INDEPENDENTLY_CERTIFIED",
+    "scientific_novelty": "NOT_TESTED"
+  },
+  "world_schema_sha256": "3e6c4696a5cb2530a7a32208950176480e97d6557162e5e34c761d111b33fb70",
+  "world_spec_sha256": "16abe2f189b463fd78d4c4a42bdc34a419d1a94d9f76652923cefa90e8a3f348"
+}

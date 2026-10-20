@@ -1,0 +1,8 @@
+{
+  "energy_difference": -3.1196317031412235e-05,
+  "physical_precision_qualified": false,
+  "reason": "SAME_COMPOSITION_AND_PHYSICAL_METHOD",
+  "scope": "same-model geometry perturbation, NOT a reaction barrier, discovery, or independently certified energy",
+  "status": "MODEL_INTERNAL_DIFFERENCE",
+  "unit": "Eh"
+}

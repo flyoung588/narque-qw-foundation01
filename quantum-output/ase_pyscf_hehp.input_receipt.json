@@ -1,0 +1,7 @@
+{
+  "electron_count": 2,
+  "object_id": "WORLD_HEHPLUS_DERIVED_REQUEST",
+  "path": "/app/examples/ase_pyscf_hehp.json",
+  "scope": "bounded mean-field BO quantum single point",
+  "sha256": "589fb54c61e7c8f9cb7346a5e0263651024ce29e1c16755addcb109bd53b2f93"
+}
