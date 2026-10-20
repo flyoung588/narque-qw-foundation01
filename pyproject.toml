@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "narque-qw-foundation-01"
+version = "0.1.1"
+description = "A minimal molecular WorldSpec and physically scoped ASE/PySCF bridge"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "jsonschema"]
+
+[project.optional-dependencies]
+local-pilot = ["rdkit"]
+quantum = ["ase==3.29.0", "pyscf==2.8.0"]
+
+[tool.setuptools]
+packages = ["foundation01"]

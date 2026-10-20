@@ -1,0 +1,46 @@
+{
+  "id": "QW-FOUNDATION01-ONE-SHOT-ASE-PYSCF",
+  "state": "READY_LOCAL_NOT_DISPATCHED",
+  "source_original": "QW_FOUNDATION_01_v0.1.0_STAGE",
+  "target": "W1 bounded quantum construction; NOT W2/W3",
+  "public_destination": "USER_APPROVAL_REQUIRED",
+  "runtime": {
+    "runner": "ubuntu-24.04 standard free public only",
+    "workflow_dispatch_only": true,
+    "jobs": 1,
+    "attempts": 1,
+    "max_job_min": 15,
+    "science_cpu": 1,
+    "science_threads": 1,
+    "science_mem_bytes": 1073741824,
+    "science_swap_bytes": 0,
+    "science_network": false,
+    "new_purchase": false
+  },
+  "science": {
+    "methods": [
+      "RHF",
+      "UHF"
+    ],
+    "basis": [
+      "sto-3g",
+      "cc-pvdz"
+    ],
+    "atom_limit": 8,
+    "electron_limit": 30,
+    "systems": [
+      "HeH+",
+      "H2O",
+      "H atom",
+      "newly submitted LiH"
+    ],
+    "closed_shell_on_two_basis_not_independent": "same PySCF integrals/solver only",
+    "full_mission_qualified": false
+  },
+  "historic": [
+    "Core01/02/03 frozen",
+    "No XREM Canonical mutation",
+    "No alternate rerun",
+    "No automatic next tasks"
+  ]
+}

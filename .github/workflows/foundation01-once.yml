@@ -1,0 +1,30 @@
+name: QW-FOUNDATION-01 single real quantum world test
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: narque-qw-foundation01-once
+  cancel-in-progress: false
+jobs:
+  foundation:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      OPENBLAS_VERBOSE: '0'
+      PYTHONDONTWRITEBYTECODE: '1'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Build pinned science image (no cache)
+        run: timeout --kill-after=5s 200s docker build --pull --no-cache --build-arg BASE_IMAGE=python@sha256:2ed6491b93cd49272ee6de2b5a38440c3448360322c089fc23e370722d74179d -f cloud/Dockerfile -t core-foundation01:once .
+      - name: One bounded actual ASE-PySCF quantum run
+        run: python3 -B cloud/host_run.py
+      - name: Export partial or complete results in ordinary logs
+        if: always()
+        run: python3 -B cloud/export_logs.py "$RUNNER_TEMP/qw-foundation01-results"

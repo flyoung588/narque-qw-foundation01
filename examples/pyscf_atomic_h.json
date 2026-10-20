@@ -1,0 +1,35 @@
+{
+  "version": "QW-WORLDSPEC-0.1",
+  "object_id": "WORLD_H_EXACT_LIMIT_BENCHMARK",
+  "epistemic_mode": "GROUNDED",
+  "matter": {
+    "type": "molecule",
+    "atoms": [
+      {
+        "element": "H",
+        "xyz_angstrom": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "charge": 0,
+    "spin_2S": 1,
+    "periodic": false,
+    "source": "Hydrogen atom independent analytic E0=-0.5 Eh in infinite basis, one-electron Coulomb limit"
+  },
+  "physics": {
+    "engine": "pyscf",
+    "method": "UHF",
+    "basis": "cc-pvdz",
+    "observables": [
+      "energy",
+      "forces"
+    ]
+  },
+  "experiment": {
+    "action": "single_point",
+    "description": "One-electron finite Gaussian basis vs analytic -0.5Eh; not a molecular cross-solver proof"
+  }
+}
